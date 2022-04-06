@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body
+{ border:10px solid black;
+margin:0;
+background:#ffffff;
+font-family:'Work Sans',sans-serif;
+font-weight:800;
+}
+.header{
+background-color:linen;
+padding:20px;
+text-align:center;}
+
+header::after{
+content:";
+display:table;
+clear: both;
+}
+
+.logo
+{
+float:left;
+padding:10px 0;
+}
+
+nav{
+float:right;
+}
+
+nav ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+nav li{
+display:inline-block;
+margin-left:70px;
+padding-top:23px;
+position:relative;
+}
+
+nav a{
+color:#444;
+text-decoration:None;
+text-transform:uppercase;
+font-size:14px;
+}
+nav a:hover{
+color:#9B1E7263;
+}
+
+
+nav a::before{
+content:"";
+display:block;
+height:5px;
+background-color:rgb(255, 255, 255);
+position :absolute;
+top:0;
+width:0%;
+transition:all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+width:100%;
+}
+
+
+.container{
+
+width:80%;
+margin:0 auto;
+}
+
+.btn{
+font-size:20px;
+}
+.middle{
+background-image:url('Kerala.jpg');
+padding:200px;
+text-align:center;
+opacity:.9;
+color:white;
+}
+.content
+{
+background-color:black;
+opacity:.7;
+font-size:30px;
+border:2px solid red;
+font-family:"Times New Roman";
+padding:20px;
+color:white;
+}
+.wrapper
+{
+padding:50px;
+text-align:center;
+background-color:white;
+width:1300px;
+height:2800px;
+border:1px solid black;
+opacity:0.9;
+}
+.footer{
+padding:15px;
+font-size:20px;
+background-color:lightblue;
+text-align:center;
+}
+
+.styled-table{
+border-collapse:collapse;
+margin:25px;
+font-size:.9em;
+font-family:sans-serif;
+min-width:400px;
+box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+
+thead tr
+{ background-color:#009879;
+color:#ffffff;
+text-align:center;
+}
+
+th,td{
+padding:12px 15px;}
+
+tr{
+border-bottom:1px solid #dddddd;}
+
+tr:nth-of-type(even)
+{
+background-color:#f3f3f3;}
+
+tr:last-of-type{
+border-bottom:2px solid #009879;
+}
+<!-- lets make the active row look different -->
+tr:active-row
+{
+font-weight:bold;
+color:#009879;
+}
+tr:hover
+{background-color:#3fba5c;}
+</style>
+</head>
+<body>
+<div class="header">
+    <img src="Kerala.jpg" height="50" width="50">
+<nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hotel.html">Hotels</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li></li>
+        </ul>
+        </nav>
+        <div class="container">
+        <button class="btn">Login</button></div></div>
+        <ol>
+<table border:1px solid black ;align:center>
+<th colspan=14><h2> Venice Places to stay</h2></th>
+<table class="styled-table">
+<thead>
+
+    <tr>
+        <th colspan=4>Image</th>
+        <th colspan=4>Hotel Name</th>
+        <th colspan=4>Price</th>
+        <th colspan=4 >Facilities</th>
+        </tr>
+        </thead>
+
+<tr>
+<td colspan="4"><img src="Radisson blu.jpg" alt="" height="200" width="200"></td>
+<td colspan="4">Radisson Blu Kochi</td>
+<td colspan="4">₹4570</td>
+<td colspan="4">Chic rooms in a sophisticated hotel featuring 3 restaurants, a rooftop pool & a spa</td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="Le Méridien.jpg" alt="" height="200" width="200"></td>
+<td colspan="4">Le Méridien Kochi</td>
+<td colspan="4">₹10,029</td>
+<td colspan="4">Refined rooms & suites in an upscale, waterside hotel offering 2 restaurants, a spa & houseboats.</td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="Taj Bekal.jpg" alt="" height="200" width="200"></td>
+<td colspan="4">Taj Bekal Resort & Spa</td>
+<td colspan="4">₹25,974</td>
+<td colspan="4">Posh quarters, some with plunge pools, in a high-end resort offering dining, a spa & beach access.</td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="Taj Kumarakom.jpg" alt="" height="200" width="200"></td>
+<td colspan="4">Taj Kumarakom Resort & Spa</td>
+<td colspan="4">₹14,124</td>
+<td colspan="4">Upscale waterfront hotel offering an outdoor pool & an Ayurvedic spa, plus a bar & seafood dining.</td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="Taj Malabar.jpg" alt="" height="200" width="200"></td>
+<td colspan="4">Taj Malabar Resort & Spa</td>
+<td colspan="4">₹10,050</td>
+<td colspan="4">High-end hotel featuring 5 restaurants, a hip bar & an outdoor pool, plus a spa & sea views.</td>
+</tr>
+
+<tr>
+<td colspan="4"><img src="Ramada Resort.jpg" alt="" height="200" width="200"></td>
+<td colspan="4">Ramada Resort by Wyndham Kochi</td>
+<td colspan="4">₹4,425</td>
+<td colspan="4">Posh waterfront retreat offering modern rooms, plus an outdoor pool, a spa & restaurants</td>
+</tr>
+</table>
+</td></table></div>
+<div class="footer"><p>To Know More About Kerala <a href="https://en.wikipedia.org/wiki/Kerala">Click Here</a></p></div>
+</body>
+</html>
